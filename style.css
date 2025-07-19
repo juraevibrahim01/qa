@@ -1,0 +1,98 @@
+                                                                                /* Html?, Body, header, main, footer*/
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    width: 100%;
+    height: 13%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+}
+
+main {
+    width: 100%;
+    height: 70%;
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
+}
+
+footer {
+    width: 100%;
+    height: 17%;
+    padding: 0px;
+    margin: 0px;
+    background: #122e5c;
+}
+
+.header_div {
+    background-color: #873e23;
+    display: flex;
+    height: 100%;
+    width: 50%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header_seconddiv{
+    width: 20%;
+    max-height: 100px;
+    max-width: 20%;
+}
+
+.header_seconddiv img{
+    padding: 20px;
+    margin: 0;
+    max-width: 50px;
+    height: 55px;   
+    border-radius: 37%;
+}
+
+.divfifty {
+    height: 100%;
+    width: 50%;
+    background-color: #873e23;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    width: 50%;
+    max-width: 50%;
+}
+
+.dochDiv {
+    width: 30%;
+    
+}
+
+ul {
+    display: flex;
+    gap: 37px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul {
+    padding-top: 20px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
