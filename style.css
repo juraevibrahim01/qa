@@ -26,7 +26,6 @@ main {
     height: 70%;
     padding: 0px;
     margin: 0px;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 
 }
 
@@ -35,7 +34,6 @@ footer {
     height: 17%;
     padding: 0px;
     margin: 0px;
-    background: #122e5c;
 }
 
 .header_div {
