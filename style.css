@@ -47,6 +47,35 @@ footer {
     margin: 0px;
 }
 
+.sectionpar {
+    text-align: center;
+    width: 100%;
+}
+
+.playwrite-hu {
+  font-family: "Playwrite HU", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400; /* число от 100 до 400 в твоём случае */
+  font-style: normal;
+}
+
+.fjalla-one-regular {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sectionchild {
+    width: 33.3%;
+}
+
 .header_seconddiv{
     width: 20%;
     max-height: 100px;
