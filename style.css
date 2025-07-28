@@ -125,3 +125,8 @@ ul li a {
     color: white;
     text-decoration: none;
 }
+
+footer section h2 {
+    margin: 0px;
+    padding: 0px;
+}
