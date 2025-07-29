@@ -1,4 +1,8 @@
-                                                                                /* Html?, Body, header, main, footer*/
+
+* {
+    box-sizing: border-box;
+}
+/* Html?, Body, header, main, footer*/
 html {
     width: 100%;
     height: 100%;
@@ -50,6 +54,7 @@ footer {
 .sectionpar {
     text-align: center;
     width: 100%;
+    height: 100%;
 }
 
 .playwrite-hu {
@@ -70,10 +75,24 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
+    height: 70%;
+    gap: 20px   ;
 }
 
 .sectionchild {
-    width: 33.3%;
+    background-color: #998bda59;
+    width: 30%;
+    border: 3px groove rgba(255, 255, 255, 0.651);
+    border-radius: 50px;
+}
+
+.sectionchild:hover {
+
+    border: 2px groove rgba(105, 105, 69, 0.479);
+}
+
+.sectionchild img {
+    border-radius: 30px;
 }
 
 .header_seconddiv{
