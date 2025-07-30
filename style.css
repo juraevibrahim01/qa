@@ -1,151 +1,65 @@
-
-* {
-    box-sizing: border-box;
-}
-/* Html?, Body, header, main, footer*/
-html {
-    width: 100%;
+html, body {
     height: 100%;
+    width: 100%;
+}
+
+body{
     margin: 0;
-    padding: 0;
-}
-
-body {
-    height: 100%;
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
+    min-height: 100vh; /* Минимум на весь экран */
 }
 
 header {
-    width: 100%;
-    height: 13%;
-    padding: 0px;
-    margin: 0px;
-    display: flex;
+    height: 669px;
 }
 
 main {
-    width: 100%;
-    height: 70%;
-    padding: 0px;
-    margin: 0px;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-
+  height: 2000px; /* Явно задаём высоту больше экрана */
+  background: linear-gradient(#e66465, #9198e5); /* Для наглядности */
 }
 
-footer {
-    width: 100%;
-    height: 17%;
-    padding: 0px;
-    margin: 0px;
-    background: #122e5c;
+                                                                    /* Header */
+#panel {
+    height: inherit;
 }
 
-.header_div {
-    background-color: #873e23;
+#img {
+    height: 100px;
+    width: 110px;
+    border: 2px solid rgba(102, 38, 8, 0.89);
+    margin-left: 40px;
     display: flex;
-    height: 100%;
-    width: 50%;
-    padding: 0px;
-    margin: 0px;
+    justify-content: center; /* По горизонтали */
+    align-items: center;     /* По вертикали */
+    border-radius: 45px;
 }
 
-.sectionpar {
-    text-align: center;
-    width: 100%;
-    height: 100%;
+#img:hover, img {
+    background-color: #66687c1a;
 }
 
-.playwrite-hu {
-  font-family: "Playwrite HU", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400; /* число от 100 до 400 в твоём случае */
-  font-style: normal;
+#img:hover{
+    border: 2px solid rgba(223, 210, 210, 0.89);
 }
 
-.fjalla-one-regular {
-  font-family: "Fjalla One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-.section {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 70%;
-    gap: 20px   ;
-}
-
-.sectionchild {
-    background-color: #998bda59;
-    width: 30%;
-    border: 3px groove rgba(255, 255, 255, 0.651);
+#img img {
+    width: 85px;
+    height: 85px;
     border-radius: 50px;
-}
+    }
 
-.sectionchild:hover {
-
-    border: 2px groove rgba(105, 105, 69, 0.479);
-}
-
-.sectionchild img {
-    border-radius: 30px;
-}
-
-.header_seconddiv{
-    width: 20%;
-    max-height: 100px;
-    max-width: 20%;
-}
-
-.header_seconddiv img{
-    padding: 20px;
+#panel a {
+    padding: 0;
     margin: 0;
-    max-width: 50px;
-    height: 55px;   
-    border-radius: 37%;
 }
 
-.divfifty {
-    height: 100%;
-    width: 50%;
-    background-color: #873e23;
-    padding: 0px;
-    margin: 0px;
-}
+#panel {
 
-nav {
-    width: 50%;
-    max-width: 50%;
-}
-
-.dochDiv {
-    width: 30%;
-    
-}
-
-ul {
     display: flex;
-    gap: 37px;
 }
 
-ul li {
-    list-style-type: none;
-}
-
-ul {
-    padding-top: 20px;
-}
-
-ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-footer section h2 {
-    margin: 0px;
-    padding: 0px;
+#panel h2 {
+    padding-top: 15px;
+    color: #631414;
+    font-size: 20px;
+    /* padding-left: 20px; */
 }
