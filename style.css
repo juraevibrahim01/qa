@@ -25,7 +25,7 @@ main {
 #img {
     height: 100px;
     width: 110px;
-    border: 2px solid rgba(102, 38, 8, 0.89);
+    border: 2px solid rgba(126, 33, 33, 0.404);
     margin-left: 40px;
     display: flex;
     justify-content: center; /* По горизонтали */
@@ -53,13 +53,53 @@ main {
 }
 
 #panel {
-
     display: flex;
+    height: 120px;
+    padding-top: 20px;
 }
 
 #panel h2 {
-    padding-top: 15px;
-    color: #631414;
+    padding-top: 35px;
+    color: #525a8bc7;
     font-size: 20px;
-    /* padding-left: 20px; */
+    padding-left: 40px;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#panel>nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+#panel nav{
+    padding-top: 20px;
+    padding-left: 100px;
+}
+
+#nav ul li a:hover{
+    text-decoration: none;
+    color: rgb(175, 96, 96);
+    border: 1px solid rgba(33, 102, 182, 0.199);
+    padding: 8px;
+    border-radius: 17px;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: rgba(34, 112, 201, 0.61);
+    padding: 9px;
+
+}
+
+.pt-serif-regular-italic {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#panel a{
+    height: 0;
+    margin: 0;
 }
