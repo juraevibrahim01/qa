@@ -1,308 +1,149 @@
 * {
-    box-sizing: border-box; /* Что-бы дочерние блоуи не выходили от родителя */
+    box-sizing: border-box; /* Что-бы дочерние блоки не выходили от родителя */
 }
 
 html, body {
-    height: 100%;
     width: 100%;
-}
-
-body{
-    margin: 0;
-    min-height: 100vh; /* Минимум на весь экран */
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 header {
+    width: 100%;
+    height: 700px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Root */
+#root {
+    width: 100%;
+    height: 60px;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0; /* расстояние от верхнего края окна */
+    background-color: white;
+}
+
+/* flex */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-gap {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.svg {
+    margin-left: 20px;
+}
+
+.svg  {
+    height: 40px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.margin-left {
+    margin-left: 300px;
+}
+
+.button-size {
+    height: 40px;
+    width: 90px;
+}
+
+.button-style {
+    background-color: rgb(51, 51, 241);
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+#root > div:first-child {
+  /* стили для первого дочернего div */
+    width: 100%;
+}
+
+.tablo {
+    width: 100%;
     height: 600px;
-}
-
-main {
-  height: 2000px; /* Явно задаём высоту больше экрана */
-  background: rgb(255, 255, 255); /* Для наглядности */
-}
-
-                                                /* Header */
-#panel {
-    height: inherit;
-}
-
-#img {
-    height: 100px;
-    width: 110px;
-    border: 2px solid rgba(126, 33, 33, 0.404);
-    margin-left: 40px;
-    display: flex;
-    justify-content: center; /* По горизонтали */
-    align-items: center;     /* По вертикали */
-    border-radius: 45px;
-}
-
-#img:hover, img {
-    background-color: #66687c1a;
-}
-
-#img:hover{
-    border: 2px solid rgba(223, 210, 210, 0.89);
-}
-
-#img img {
-    width: 85px;
-    height: 85px;
-    border-radius: 50px;
-    }
-
-#panel a {
-    padding: 0;
-    margin: 0;
-}
-
-#panel {
-    display: flex;
-    height: 120px;
-    padding-top: 20px;
-}
-
-#panel h2 {
-    padding-top: 35px;
-    color: #525a8bc7;
-    font-size: 20px;
-    padding-left: 40px;
-    margin: 0;
-    font-family:'Times New Roman', Times, serif;
-}
-
-#panel>nav ul {
-    display: flex;
-    list-style: none;
-    gap: 40px;
-}
-
-#panel nav{
-    padding-top: 20px;
-    padding-left: 100px;
-}
-
-#nav ul li a:hover{
-    text-decoration: none;
-    color: rgb(175, 96, 96);
-    border: 1px solid rgba(33, 102, 182, 0.199);
-    padding: 8px;
-    border-radius: 17px;
-}
-
-#nav ul li a {
-    text-decoration: none;
-    color: rgba(34, 112, 201, 0.61);
-    transition: color 0.5s ease;
-    padding: 9px;
-
-}
-
-.pt-serif-regular-italic {
-  font-family: "PT Serif", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-#panel a{
-    height: 0;
-    margin: 0;
-}
-
-.mainimg {
+    background-color: rgba(51, 176, 214, 0.164);
     display: flex;
     justify-content: center;
-    align-items: center;
-    object-fit: cover;
-    position: relative;
-    margin-top: 20px;
-
+    align-items:normal;
 }
 
-.mainimg a img {
-    border: 4px solid #fff;
-    outline: 2px solid #e0e0e0; /* светло-серый контур */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-    border-radius: 12px;
-    filter: drop-shadow(2px 2px 2px rgb(102, 81, 81));
-}
-
-#left {
-    transform: scaleX(-1);
-    padding: 0 20px;
-}
-
-#leftspan {
-    transform: none !important;
-    color: black;
-}
-
-#right {
-    padding: 0 20px;
-}
-
-.mainimg a img:hover {
-    filter: brightness(0.9);
-}
-
-#map{
-    color: #2f357998;
-    font-size:20px;
-    text-align: center;
-    position: relative;
-}
-
-.pt-serif-regular-italic {
-  font-family: "PT Serif", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-#map::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: rgb(173, 147, 147);
-    left: 50%; /* Ставит точку в центре и идёт стиль из лево в право */
-    bottom: 0;
-    transform: translateX(-50%); /* Берет половину 92.135px и идёт в лево от центра */
-    transition: width 0.5s;
-}
-
-#map:hover::before {
-    width: 92.135px;
-}
-
-.caption {
-    position: abs   olute;
-    left: 240px;
-    bottom: 10px;
-    color: #fff;
-    font-size: 20px;
-}
-
-#mainfoto {
-    height: 470px;
-    margin: 10px 2px 10px 20px;
-    display: flex;
-    gap: 15px;
-}
-
-#mainfoto img {
-    border-radius: 20px;
-}
-
-#mainfoto picture img {
-    min-height: 100%;
-}
-
-.main {
-    height: 100%;
-    width: 100%;
-    margin-top: 20px;
-}
-
-#mainfoto p {
-    font-size: 18px;
-}
-
-.pt-serif-regular-italic {
-  font-family: "PT Serif", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-p[class="pt-serif-regular-italic"]::before {
-    content: "•";
-    color: black; /* Цвет точки */
-    font-size: 20px;
-    margin-right: 8px; /* Отступ между точкой и текстом */
-}
-
-.types_of_testing {
-    width: 47%;
+.tablo div{
+    width: 400px;
     height: 400px;
-    /* border: 2px solid black; */
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* x, y, размытие, цвет */
-    margin-bottom: 10px;
-    border-radius: 20px;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
 }
 
-.typr_and_instrument {
-    width: 100%;
+.tablo div h2:first-child {
+    padding-top: 80px;
+}
+
+.tablo div h2, p {
+    margin: 0px;
+    padding: 3px;
+}
+
+.tablo div h2:last-of-type {
+  color: blue;
+}
+
+.tablo div p {
+    color: rgb(107, 106, 106);
+}
+
+.buttons-tablo {
+    width: 100% !important;
+    height: 50px !important;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 33px;
+    border: 1px solid red;
+    gap: 17px;
 }
 
-.type_testing {
-    text-align: center;
+.buttons-tablo div {
+    width: 40%;
+    height: 40px;
+    border: 1px solid red;
 }
 
-#mainsection {
-    border: 2px solid rgba(0, 0, 0, 0.171);
-     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* x, y, размытие, цвет */
+#buton-color-blue {
+    background-color: blue;
 }
 
-.div_zagolov_type_and_instru{
-    text-align: center;
+#buton-color-blue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.pt-serif-regular {
-  font-family: "PT Serif", serif;
-  font-weight: 400;
-  font-style: normal;
+#buton-color-blue p {
+    color: white;
 }
 
-#ulone li {
-    padding-bottom: 4px;
-}
-
-#ulsecond li {
-    padding-bottom: 4px;
-}
-
-#ulone li a {
-    color: black;
-    text-decoration: none;
-}
-
-#ulsecond li a {
-    color: black;
-    text-decoration: none;
-}
-
-.type_testing a {
-    color: black;
-    text-decoration: none;
-}
-
-#ulone {
-    color: blueviolet;
-}
-
-#ulsecond {
-    color: blueviolet;
-}
-
-#ulsecond li a{
-    border: 0 solid white;
-    transition: border 0.1s ease;
-}
-
-#ulsecond li a:hover {
-    border: 2px solid white;
-    
-}
-
-#ulone li a{
-    border: 0 solid white;
-    transition: border 0.1s ease;
-}
-
-#ulone li a:hover {
-    border: 2px solid white;
-
-}
