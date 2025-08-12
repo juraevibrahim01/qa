@@ -16,7 +16,7 @@ header {
 }
 
 footer {
-    background-color: #1d2f55
+    background-color: #1d2f55dc
 }
 
 /* Root */
@@ -142,12 +142,17 @@ ul li a {
 
 #buton-color-blue {
     background-color: blue;
-}
-
-#buton-color-blue {
+    border: none;
+    padding: 5px 6px 5px 6px;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+
+#buton-color-blue:active {
+    transition: background-color 10ms ease;
+    background-color: rgba(0, 0, 255, 0.226);
 }
 
 #buton-color-blue p {
@@ -222,6 +227,26 @@ div.flex-gorizontal {
     text-align: center;
     padding-top: 40px;
 }
+
+.pt-serif-bold {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pt-serif-regular {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Шрифты контакт, адрес, локализация */
+.pt-serif-regular {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 .button-prokrutka {
     background-color: rgba(223, 219, 219, 0.438);
@@ -626,3 +651,25 @@ div.flex-gorizontal {
     margin-top: 30px;
 }
 
+.futter-p-a {
+    color: black;
+}
+
+.div-button:hover {
+    background-color: red;
+}
+
+.second-div-button {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border: 1px solid black;
+}
+
+.button-radius {
+    border-radius: 5px;
+}
+
+.second-div-button:active {
+    transition: background-color 10ms ease;
+    background-color: rgba(0, 0, 255, 0.226);
+}
