@@ -100,7 +100,7 @@
                 </div>
             </div>
             <div id="courses" class="flex-gap-courses">
-                <div class="courses-div">
+                <div class="courses-div" data-level="advanced">
                     <div class="img"><img src="./img/Логотип Основы.jpg" alt="Логотип Основы" class="radius-10px"></div>
                     <div class="info-course">
                         <div class="info-course-zagolovok">
@@ -141,7 +141,7 @@
                     </div>
                 </div>
                 <!-- Mobile testing -->
-                <div class="courses-div">
+                <div class="courses-div" data-level="advanced">
                     <div class="img"><img src="./img/Логотип mobile testing.jpg" alt="Логотип Основы" class="radius-10px"></div>
                     <div class="info-course">
                         <div class="info-course-zagolovok">
@@ -182,7 +182,7 @@
                     </div>
                 </div>
                 <!-- islsq -->
-                <div class="courses-div">
+                <div class="courses-div" data-level="beginner">
                     <div class="img"><img src="./img/Логотип istsq.jpg" alt="Логотип Основы" class="radius-10px"></div>
                     <div class="info-course">
                         <div class="info-course-zagolovok">
@@ -223,7 +223,7 @@
                     </div>
                 </div>
                 <!-- Manual -->
-                <div class="courses-div">
+                <div class="courses-div" data-level="beginner">
                     <div class="img"><img src="./img/Логотип manual testing.jpg" alt="Логотип Основы" class="radius-10px"></div>
                     <div class="info-course">
                         <div class="info-course-zagolovok">
@@ -264,7 +264,7 @@
                     </div>
                 </div>
                 <!-- Auto testing -->
-                <div class="courses-div">
+                <div class="courses-div" data-level="intermediate">
                     <div class="img"><img src="./img/Логотип Automation testing.jpg" alt="Логотип Основы" class="radius-10px"></div>
                     <div class="info-course">
                         <div class="info-course-zagolovok">
@@ -305,7 +305,7 @@
                     </div>
                 </div>
                 <!-- Postman -->
-                <div class="courses-div">
+                <div class="courses-div" data-level="intermediate">
                     <div class="img"><img src="./img/Логотип Postman testing.jpg" alt="Логотип Основы" class="radius-10px"></div>
                     <div class="info-course">
                         <div class="info-course-zagolovok">
@@ -508,15 +508,6 @@
                 <p>&copy 2025 QA Academy. All rights reserved. Empowering QA professionals worldwide.</p>
             </div>
     </footer>
-    <script>
-        document.querySelectorAll('.button-prokrutka').forEach(btn => {
-            btn.addEventListener('click', () => {
-                // Убираем активный класс у всех
-                document.querySelectorAll('.button-prokrutka').forEach(el => el.classList.remove('clicked'));
-                // Добавляем активный класс к выбранному
-                btn.classList.add('clicked');
-            });
-        });
-    </script>
+    <script src="./main.js"></script>
 </body>
 </html>
