@@ -24,3 +24,15 @@ buttons.forEach(btn => {
     });
   });
 });
+
+
+// humburger click active
+let hamburger = document.querySelector(".hamburger");
+let hamburger_menu = document.querySelector(".burger-menu");
+
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle("is-active");
+  hamburger_menu.classList.toggle("burger-menu-fix");
+});
+
+// При клике выводилось меню из бургера и позицией fiexed
