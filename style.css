@@ -43,6 +43,7 @@ footer {
 
 .flex-gap {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 30px;
@@ -402,12 +403,13 @@ div.flex-gorizontal {
 }
 
 .people {
-    width: 100%;
-    height: 460px;
+    width: 100%;;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    margin-top: 20px;
 }
 
 .people-form {
@@ -540,6 +542,7 @@ div.flex-gorizontal {
 
 .element-location {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 60px;
@@ -672,4 +675,8 @@ div.flex-gorizontal {
 .second-div-button:active {
     transition: background-color 10ms ease;
     background-color: rgba(0, 0, 255, 0.226);
+}
+
+.none-border-box {
+    box-sizing: none !important;
 }
