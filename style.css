@@ -735,20 +735,40 @@ div.flex-gorizontal {
     z-index: 101;
 }
 
-.form-div {
-  display: flex;
-  flex-direction: column; /* вертикальная колонка */
-  justify-content: center; /* по вертикали */
-  align-items: center;  
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* label слева */
-}
-
-form div input, select {
+form {
     width: 50%;
+    border-radius: 20px;
+    background-color: white;
 }
 
+.form-div {
+    margin: 30px;
+}
+
+div.form-div>* {
+    width: 100%;
+    padding: 2px 5px 2px 5px;
+}
+
+div.flex-form button {
+    width: 100%;   
+}
+
+.form-div input, select{
+    height: 40px;
+    border-radius: 10px;
+}
+
+.flex-form button {
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+#submit-obout-info h2, p {
+    text-align: center;
+}
+
+div label{
+    margin-top: 10px;
+}
