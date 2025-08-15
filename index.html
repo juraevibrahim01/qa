@@ -401,55 +401,40 @@
         <section id="submit-obout-info">
             <h2 class="color-white pt-serif-bold">Ready to Start Your QA Journey?</h2>
             <p class="color-white-min pt-serif-regular">Fill out the form below and our admissions team will contact you within 24 hours</p>
-            <div class="none-border-box">
-                <form action="#" method="POST" class="form-style">        
-                        <div class="journey-info">
-                            <div class="two-div-journey">
-                                <div class="">
-                                    <label for="input-text">Full Name *</label>
-                                    <input type="text" id="input-text" class="input-text" name="input-text" required>
-                                </div>
-                                <div class="">
-                                    <label for="email-input">Email Adress *</label>
-                                    <input type="email" id="email-input" class="input-text" required>
-                                </div>
+               <div>    
+                    <form action="#" class="border-red">
+                        <div class="border-red form-div">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
                             </div>
-                            <div class="two-div-journey">
-                                <div class="">
-                                    <label for="input-text">Phone Number *</label>
-                                    <input type="number" id="input-text" class="input-text" required>
-                                </div>
-                                <div>
-                                    <label for="cours">Interested Course *</label>
-                                    <select id="cours" name="course-journey" class="input-text" required>
-                                    <option value="" hidden>Select a course</option>
-                                    <option value="tj">Таджикистан</option>
-                                    <option value="ru">Россия</option>
-                                    <option value="us">США</option>
-                                    <option value="de">Германия</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="two-div-journey">
-                                <div>
-                                    <label for="cours">Interested Course *</label>
-                                    <select id="cours" name="course-journey" class="level-course" required>
-                                    <option value="" hidden>Select a course</option>
-                                    <option value="tj">Таджикистан</option>
-                                    <option value="ru">Россия</option>
-                                    <option value="us">США</option>
-                                    <option value="de">Германия</option>
-                                    </select>
-                                </div>
-                            </div>
+                            <input type="text" id="name">
                             <div>
-                                <div class="button-journey level-course margin-top">
-                                    <button type="submit" class="button-submit" ><img src="./img/calendar_today_30dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="Calender">Request Information</button>
-                                </div>
+                                <label for="email">Email Address</label>
+                            </div>
+                            <input type="email" name="email" id="email">
+                            <div>
+                                <label for="number">Phone Number</label>
+                            </div>
+                            <input type="number" name="number" id="number">
+                            <div>
+                                <label for="InterestedCourse">Interested Course</label>
+                            </div>
+                            <select name="Interested Course" id="InterestedCourse">
+                                <option value="tj">tajikistan</option>
+                            </select>
+                        
+                            <div class="flex-form">
+                                <label for="Current Experience Level">Current Experience Level</label>
+                            </div>
+                            <select name="Interested Course" id="Current Experience Level">
+                                <option value="tj">tajikistan</option>
+                            </select>
+                            <div class="flex-form">
+                                <button type="submit">Request Information</button>
                             </div>
                         </div>
-                </form>
-            </div>
+                    </form>
+               </div>
         </section>
 
         <section id="location">

@@ -450,7 +450,7 @@ div.flex-gorizontal {
 #submit-obout-info {
     padding-top: 40px;
     padding-bottom: 20px;
-    text-align: center;
+    /* text-align: center; */
     background-color: blue;
     margin-top: 40px;
     padding-bottom: 60px;
@@ -467,10 +467,10 @@ div.flex-gorizontal {
     margin-top: 20px;
 }
 
-#submit-obout-info div {
+/* #submit-obout-info div {
     display: flex;
     justify-content: center;
-}
+} */
 
 .two-div-journey div label {
     text-align: left !important;
@@ -684,8 +684,8 @@ div.flex-gorizontal {
 
 /* Медиа запросы бургер */
 
-@media (max-width: 600px) {
-  nav.flex-gap ul li, button {
+@media (max-width: 683px) {
+  nav.flex-gap ul li {
     display: none;
   }
   .wrapper {
@@ -693,7 +693,17 @@ div.flex-gorizontal {
   }
 }
 
-@media (min-width: 601px) {
+
+@media (max-width: 683px) {
+  button {
+    display: none;
+  }
+  .wrapper {
+    display: block;
+  }
+}
+
+@media (min-width: 683px) {
   nav.flex-gap ul li, button {
     display: block;
   }
@@ -724,3 +734,21 @@ div.flex-gorizontal {
     right: 0;
     z-index: 101;
 }
+
+.form-div {
+  display: flex;
+  flex-direction: column; /* вертикальная колонка */
+  justify-content: center; /* по вертикали */
+  align-items: center;  
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* label слева */
+}
+
+form div input, select {
+    width: 50%;
+}
+
