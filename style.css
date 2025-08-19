@@ -274,6 +274,7 @@ div.flex-gorizontal {
 .button-prokrutka h2 {
     padding: 0%;
     margin: 0%;
+    cursor: pointer;
 }
 
 .back-color-gray {
@@ -300,8 +301,8 @@ div.flex-gorizontal {
     display: flex;
     align-content: center;
     flex-wrap: wrap;
-    gap: 30px;
-    /* padding-left: 50px; */
+    justify-content: space-evenly;
+    row-gap: 40px;
 }
 
 .img {
@@ -670,6 +671,7 @@ div.flex-gorizontal {
     padding-bottom: 5px;
     padding-top: 5px;
     border: 1px solid black;
+    cursor: pointer;
 }
 
 .button-radius {
@@ -754,12 +756,15 @@ div.form-div>* {
 }
 
 div.flex-form button {
-    width: 100%;   
+    background-color: #0404ffcf;
+    width: 100%;
+    cursor: pointer;
 }
 
 .form-div input, select{
     height: 40px;
     border-radius: 10px;
+    border: 1px solid;
 }
 
 .flex-form button {
@@ -768,10 +773,18 @@ div.flex-form button {
     border-radius: 10px;
 }
 
-#submit-obout-info h2, p {
-    text-align: center;
-}
-
 div label{
     margin-top: 10px;
+}
+
+.margin-top {
+    margin-top: 20px;
+}
+
+#submit-obout-info h2, #submit-obout-info p {
+    text-align: center ;
+}
+
+.coursor-pointer {
+    cursor: pointer;
 }
