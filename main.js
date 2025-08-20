@@ -36,3 +36,21 @@ hamburger.addEventListener("click", function () {
 });
 
 // При клике выводилось меню из бургера и позицией fiexed
+
+
+// Скрол вверх
+const backToTop = document.querySelector('.back-to-top');
+
+// Скролл к верху при клике
+backToTop.addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Появление кнопки при прокрутке
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 350) {
+    backToTop.classList.add('active');
+  } else {
+    backToTop.classList.remove('active');
+  }
+});
