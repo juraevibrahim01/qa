@@ -301,7 +301,7 @@ div.flex-gorizontal {
     display: flex;
     align-content: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     row-gap: 40px;
 }
 
@@ -623,7 +623,7 @@ div.flex-gorizontal {
 .icons-self {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 10px;
 }
 
