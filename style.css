@@ -37,7 +37,7 @@ footer {
 .flex {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:space-around;
 
 }
 
@@ -50,6 +50,8 @@ footer {
 
 .svg  {
     height: 90%;
+    display: flex;
+    align-items: center;
 }
 
 .bold {
@@ -741,19 +743,18 @@ div.flex-gorizontal {
 .burger-menu ul li{
     display: flex;
     width: 70%;
+    
 }
 
  .burger-menu ul li a:hover{
     background-color: #555;
     color: white;
- }
+}
 
  .burger-menu ul li a {
-
-    width: 35%;;
+    /* width: 35%; */
     font-size: 24px;
     padding: 8px 16px;
-
  }
 
 .burger-menu-fix {
